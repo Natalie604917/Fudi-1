@@ -359,4 +359,22 @@ img {
     max-width: 1200px;
   }
 }
+
+.primary-title {
+  font-size: 100px;
+  line-height: 0.3;
+  letter-spacing: 5px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
+  color: var(--secondary-text-color);
+}
+
+.secondary-title {
+  font-size: 18px;
+  line-height: 1.67;
+  letter-spacing: 0.9px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
 /*# sourceMappingURL=main.css.map */
