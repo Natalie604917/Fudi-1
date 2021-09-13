@@ -9,51 +9,52 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
 <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="./css/fonts.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.2.0/modern-normalize.min.css">
 <link rel="stylesheet" href="./css/styles.css">
 </head>
 <body>
     <header>
-        <a href="./"><img src="./images/logo.svg" width="68" height="57" alt="логотип fudi"></a>
+        <a class="link" href="./"><img src="./images/logo.svg" width="68" height="57" alt="логотип fudi"></a>
         <nav>
-        <ul>
+        <ul class="list">
             <li>
-                <a href="">HOME</a>
+                <a class="link" href="">HOME</a>
             </li>
             <li>
-                <a href="">RECIPES</a>
+                <a class="link" href="">RECIPES</a>
             </li>
             <li>
-                <a href="">SHOPS</a>
+                <a class="link" href="">SHOPS</a>
             </li>
             <li>
-                <a href="">CONTACTS</a>
+                <a class="link" href="">CONTACTS</a>
             </li>
         </ul>
     </nav>
-        <ul>
+        <ul class="list">
             <li>
-                <button>LOG IN</button>
+                <button class="secondary-button">LOG IN</button>
             </li>
             <li>
-                <button>SIGN UP</button>
+                <button class="secondary-button">SIGN UP</button>
             </li>
         </ul>
     </header>
     <main>
-    <section>
-        <p>Find your Favorite</p>
-        <h1>RECIPES</h1>
-        <button>GET STARTED</button>
+    <section class="hero">
+        <p class="accent-text">Find your Favorite</p>
+        <h1 class="primary-title">RECIPES</h1>
+        <button class="primary-button">GET STARTED</button>
         <p>OR SEND US YOUR OWN RECIPES AND
-            <a href="">GET REWARDED!</a>
+            <a class="link" href="">GET REWARDED!</a>
         </p>
     </section>
-    <section class="feature-section">
+    <section class="feature">
         <div class="container">
             <!-- заголовок, который  будет скрыт с помощью CSS -->
-            <h2 class="visually-hidden">Особенности</h2>
+            <h2 class="secondary-title visually-hidden">features</h2>
 
-            <ul >
+            <ul class="list">
                 <li>
                     <div>
                         <svg class="feature__icon" width="107" height="107">
@@ -100,9 +101,9 @@
              </ul>
         </div>
         </section>
-        <section class="introducing">
+        <section class="introduction">
             <img src="./images/introducing/iPhone.png" width = "523" height = "779" alt = "fudi in app">
-            <h2>INTRODUCING THE FUDI APP</h2>
+            <h2 class="secondary-title">INTRODUCING THE FUDI APP</h2>
             <p>Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet 
                 felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest
                 ibulum tristique. Suspendisse tristique lacus ac mattis porta. 
@@ -115,13 +116,13 @@
                 Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam 
                 malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices 
                 ante, a mattis massa. </p>
-                <ul>
+               <ul class="list">
                     <li><img src="./images/introducing/appstore.png" width = "112" height = "39" alt="appstore"></li>
                     <li><img src="./images/introducing/google.png" width = "120" height = "39" alt="google"></li>
                 </ul>
         </section>
     <section class="reviews">
-        <h2 class="visually-hidden">Rewiew</h2>
+        <h2 class="secondary-title visually-hidden">Rewiew</h2>
         <img src="./images/rewiews/Dawson.jpg" width = "104" height = "104" alt="Michael Dawson">
         <p>“I am so happy because I found this recipe, and it just made my life easier.
             Thanks  so much for sharing!”</p>
@@ -130,44 +131,104 @@
                 <use href="./images/rewiews/dots.svg" ></use>
             </svg>
 </section>
-<section>
-    <h2>BROWSE BY CUISINES</h2>
-    <ul>
+<section class="gallery">
+    <h2 class="secondary-title">BROWSE BY CUISINES</h2>
+    <ul class="list">
         <li>
-            <img src="./images/recipes/italian.jpg" width="320" height = "225" alt = "italian">
+            <div class="gallery__wrapper">
+                <img src="./images/recipes/italian.jpg" width="320" height = "225" alt = "italian">
+                <div class="gallery__actions">
+                    <p>327 Recipes</p>
+                    <h3>ITALIAN</h3>
+                </div>
+            </div>
         </li>
         <li>
-            <img src="./images/recipes/indian.jpg" width = "320" height = "225" alt = "indian">
+            <div class="gallery__wrapper">
+                <img src="./images/recipes/indian.jpg" width = "320" height = "225" alt = "indian">
+                <div class="gallery__actions">
+                    <p>856 Recipes</p>
+                    <h3>INDIAN</h3>
+                </div>
+            </div>
         </li>
         <li>
-            <img src="./images/recipes/french.jpg" width = "320" height = "225" alt = "french">
+            <div class="gallery__wrapper">
+                <img src="./images/recipes/french.jpg" width = "320" height = "225" alt = "french">
+                <div class="gallery__actions">
+                    <p>27 Recipes</p>
+                    <h3>FRENCH</h3>
+                </div>
+            </div>
         </li>
         <li>
+            <div class="gallery__wrapper">
             <img src="./images/recipes/steakhouse.jpg" width = "320" height = "225" alt = "steakhouse">
+            <div class="gallery__actions">
+                <p>174 Recipes</p>
+                <h3>STEAKHOUSE</h3>
+            </div>
+        </div>
         </li>
         <li>
+            <div class="gallery__wrapper">
             <img src="./images/recipes/seafood.jpg" width = "320" height = "225" alt = "seafood">
+            <div class="gallery__actions">
+                <p>731 Recipes</p>
+                <h3>SEAFOOD</h3>
+            </div>
+        </div>
         </li>
         <li>
+            <div class="gallery__wrapper">
             <img src="./images/recipes/sushi.jpg" width = "320" height = "225" alt = "sushi">
+            <div class="gallery__actions">
+                <p>237 Recipes</p>
+                <h3>SUSHI</h3>
+            </div>
+        </div>
         </li>
         <li>
+            <div class="gallery__wrapper">
             <img src="./images/recipes/mexican.jpg" width = "320" height = "225" alt = "mexican">
+            <div class="gallery__actions">
+                <p>529 Recipes</p>
+                <h3>MEXICAN</h3>
+            </div>
+        </div>
         </li>
         <li>
+            <div class="gallery__wrapper">
             <img src="./images/recipes/chinese.jpg" width = "320" height = "225" alt = "chinese">
+            <div class="gallery__actions">
+                <p>145 Recipes</p>
+                <h3>CHINESE</h3>
+            </div>
+        </div>
         </li>
         <li>
+            <div class="gallery__wrapper">
             <img src="./images/recipes/pizza.jpg" width = "320" height = "225" alt = "pizza">
+            <div class="gallery__actions">
+                <p>327 Recipes</p>
+                <h3>PIZZA</h3>
+            </div>
+        </div>
         </li>
         <li>
+            <div class="gallery__wrapper">
             <img src="./images/recipes/american.jpg" width = "320" height = "225" alt = "american">
+            <div class="gallery__actions">
+                <p>1.437 Recipes</p>
+                <h3>AMERICAN</h3>
+            </div>
+        </div>
         </li>
     </ul>
 </section>
 <section class = "statistics">
-    <h2 class="visually-hidden">statistics</h2>
-    <ul>
+    <h2 class="secondary-title visually-hidden">statistics</h2>
+    <ul class="list">
         <li>
             <span>23,567</span>
             <p>Recipes Available</p>
@@ -193,7 +254,7 @@
 </main>
 <footer>
    <p>&copy; 2014 Fudi. All Rights Reserved.</p>
-    <span>DESIGN BY:</span><a href="./">WWW.BEKADES.COM</a>
+    <span>DESIGN BY:</span><a class="link" href="./">WWW.BEKADES.COM</a>
 </footer>
 </body>
 </html>
