@@ -269,6 +269,7 @@ summary {
 :root {
   --primary-text-color:#000000;
   --secondary-text-color: #ffffff;
+  --dark-bg-color: #4a3949;
   --grid__item: 1;
 }
 
@@ -376,5 +377,19 @@ img {
   letter-spacing: 0.9px;
   font-weight: 700;
   text-transform: uppercase;
+}
+
+.header {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2.14;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
+  background-color: var(--dark-bg-color);
+}
+
+hero {
+  background-color: var(--dark-bg-color);
 }
 /*# sourceMappingURL=main.css.map */
