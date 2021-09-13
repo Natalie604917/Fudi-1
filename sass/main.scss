@@ -3,5 +3,13 @@
 @import "./base/common";
 @import "./base/container";
 @import "./components/title";
+@import "./components/_mobile-menu";
+@import "./components/menu";
 @import "./layouts/header";
-@import "./layouts/hero";
+@import "./layouts/_hero";
+@import "./layouts/_reviews";
+@import "./layouts/_feature";
+@import "./layouts/_gallery";
+@import "./layouts/_introduction";
+@import "./layouts/_section";
+@import "./layouts/_statistics";

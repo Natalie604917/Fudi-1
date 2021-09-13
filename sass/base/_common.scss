@@ -6,7 +6,7 @@ html {
   *::before,
   *::after {
     box-sizing: inherit;
-    // outline: 2px solid red;
+    outline: 2px solid red;
   }
   
   h1,
@@ -64,6 +64,7 @@ html {
   .link {
     text-decoration: none;
     font-style: normal;
+    color: var(--secondary-text-color);
     // font-weight: 500;
     // font-size: 14px;
     // line-height: 1.14;
@@ -79,6 +80,23 @@ html {
     // }
   }
   
+  .dark-bg{
+    background-color: var(--dark-bg-color);
+    color: var(--secondary-text-color);
+  }
   
-  
-  
+.copyright{
+color: var(--copyright-color);
+font-size: 14px;
+opacity: 0.5;
+}
+
+.text{
+font-size: 14px;
+font-weight: 400;
+line-height: 2.14;
+letter-spacing: 0.7px;
+text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
+color:var(--secondary-text-color);
+
+}
