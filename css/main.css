@@ -350,15 +350,6 @@ img {
   opacity: 0.5;
 }
 
-.text {
-  font-size: 14px;
-  font-weight: 400;
-  line-height: 2.14;
-  letter-spacing: 0.7px;
-  text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
-  color: var(--secondary-text-color);
-}
-
 .container {
   width: 100%;
   padding-left: 15px;
@@ -695,18 +686,109 @@ img {
   color: var(--secondary-text-color);
 }
 
-.gallery-section {
-  padding-top: 0;
+.reviews {
+  padding-top: 84px;
+  padding-bottom: 81px;
 }
 
-@media screen and (max-width: 1199px) {
-  .gallery-section {
-    display: none;
+.reviews__icon {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews__container {
+  text-align: center;
+}
+
+.reviews__image {
+  margin-bottom: 31px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.reviews__content {
+  max-width: 886px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
+}
+
+@media screen and (min-width: 1200px) {
+  .feature-section {
+    padding-top: 101px;
+    padding-bottom: 97px;
   }
 }
 
-.gallery__item {
-  --grid__item: 5;
+.feature {
+  list-style: none;
+  display: flex;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 767.98px) {
+  .feature__item {
+    --grid__item: 1;
+    max-width: 450px;
+  }
+}
+
+.feature__item {
+  align-items: center;
+}
+
+@media screen and (min-width: 768px) {
+  .feature__item {
+    --grid__item: 3;
+  }
+}
+
+.feature__wrapper {
+  background-color: var(--secondary-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 171px;
+}
+
+@media screen and (min-width: 480px) {
+  .feature__wrapper {
+    width: 100%;
+  }
+}
+
+.feature__title {
+  color: var(--title-text);
+  padding-bottom: 10px;
+}
+
+@media screen and (max-width: 768px) {
+  .feature__title {
+    text-align: center;
+  }
+}
+
+.feature__text {
+  font-size: 14px;
+  line-height: 1.7;
+  padding-bottom: 6px;
+}
+
+.feature__icon {
+  margin-bottom: 20px;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  text-align: center;
+  padding-top: 99px;
+  padding-bottom: 59px;
 }
 
 .gallery__wrapper {
@@ -714,22 +796,19 @@ img {
 }
 
 .gallery__actions {
-  display: flex;
-  justify-content: center;
   align-items: center;
   position: absolute;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: 70px;
-  font-weight: 700;
-  font-size: 14px;
-  line-height: 1.16;
-  text-align: center;
+  height: 100%;
   text-transform: uppercase;
-  color: var(--primary-white);
-  background: rgba(47, 48, 58, 0.8);
+  box-shadow: inset 0 0 68px rgba(0, 0, 0, 0.31);
   align-items: center;
+}
+
+.gallery__list {
+  margin-top: 51px;
 }
 
 .gallery__title {
@@ -739,13 +818,13 @@ img {
   text-transform: uppercase;
   letter-spacing: 4.22px;
   text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
-  color: white;
+  color: var(--secondary-text-color);
 }
 
 .gallery__text {
   opacity: 0.9;
   text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
-  color: #ffffff;
+  color: var(--secondary-text-color);
   font-family: 'times_new_roman_psbold_italic', sans-serif;
   font-size: 15px;
   font-weight: 400;
@@ -753,7 +832,64 @@ img {
   letter-spacing: 1.8px;
 }
 
-section {
-  padding: 94px 0;
+.introduction__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.introduction__title {
+  padding-top: 182px;
+  margin-bottom: 30px;
+}
+
+.introduction__content {
+  max-width: 543px;
+  height: 300px;
+}
+
+.introduction__text {
+  margin-bottom: 29px;
+}
+
+.introduction__item:not(:last-child) {
+  margin-right: 10px;
+}
+
+.introduction__image {
+  margin-top: 102px;
+  height: 779px;
+}
+
+.statistics {
+  padding: 60px 0;
+}
+
+.statistics__list {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.statistics__label {
+  margin-bottom: 12px;
+}
+
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer__link {
+  font-size: 14px;
+  color: var(--copyright-color);
+  font-weight: 300;
+  letter-spacing: 2.8px;
+}
+
+.footer__link--accent {
+  font-size: 14px;
+  color: var(--primary-text-color);
+  font-weight: 400;
+  letter-spacing: 2.8px;
 }
 /*# sourceMappingURL=main.css.map */

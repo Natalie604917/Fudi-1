@@ -1,0 +1,24 @@
+.introduction__container{
+    display: flex;
+    justify-content: space-evenly;
+}
+.introduction__title{
+padding-top: 182px;
+margin-bottom: 30px;
+}
+
+.introduction__content{
+  max-width: 543px;
+  height: 300px;
+}
+
+.introduction__text{
+margin-bottom: 29px;
+}
+.introduction__item:not(:last-child){
+margin-right: 10px;
+}
+.introduction__image{
+margin-top: 102px;
+height: 779px;
+}

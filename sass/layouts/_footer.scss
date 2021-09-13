@@ -1,0 +1,18 @@
+
+.footer-container{
+display: flex;
+justify-content: space-between;
+}
+.footer__link{
+font-size: 14px;
+color: var(--copyright-color);
+font-weight: 300;
+letter-spacing: 2.8px;
+}
+
+.footer__link--accent{
+font-size: 14px;
+color: var(--primary-text-color);
+font-weight: 400;
+letter-spacing: 2.8px;
+}
