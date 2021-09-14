@@ -1,5 +1,8 @@
 .page-header{
-
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
 font-weight: 700;
 font-size: 14px;
 line-height: 2.14;
@@ -7,8 +10,9 @@ letter-spacing: 0.7px;
 text-transform: uppercase;
 
 text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
-background-color: var(--dark-bg-color);
+
 }
+
 .page-header__container{
   display: flex;
   align-items: center;
@@ -22,7 +26,7 @@ background-color: var(--dark-bg-color);
 }
 
 .menu-filters{
-
+background-color: transparent;
 align-items: center;
 }
 

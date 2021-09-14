@@ -1,13 +1,19 @@
+
 .hero{
 min-height: 100vh;
 padding-top: 237px;
 padding-bottom: 240px;
+background-image: url(/images/hero/main_image.jpg);
+background-repeat: no-repeat;
+
 }
 
 .hero__container {
-    text-align: center;
-    display: flex;
-    align-items: center;
+  display: flex;
+  text-align: center;
+  align-items: center;
+ 
+
   }
   
   .hero__content {
@@ -57,6 +63,7 @@ margin-bottom: 19px;
 
 .hero__button{
 color: var(--secondary-text-color);
+background-color: transparent;
 font-weight: 700;
 font-size: 18px;
 line-height: 0.84;

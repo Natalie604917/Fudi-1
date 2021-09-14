@@ -15,7 +15,11 @@
 <body>
     <header class="page-header">
         <div class="container page-header__container">
-            <a class="link logo" href="./index.html"><img src="./images/logo.svg" width="68" height="57" alt="логотип fudi"></a>
+            <a class="link logo" href="./index.html"> 
+            <svg class="logo" width="40" height="40" aria-label="логотип">
+                <use  href="./images/icons.svg#icon-logo"></use>
+            </svg>
+        </a>
             <nav class="navigation">
             <ul class="list menu-filters">
             <li class="menu-filters__item">
@@ -27,8 +31,8 @@
         <li class="menu-filters__item">
         <button type="button" class="menu-filters menu-btn" data-menu-button>
             <svg class="menu-btn__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use class="icon-menu" href="./images/icons.svg#icon-menu"></use>
-                <use class="icon-cross" href="./images/icons.svg#icon-mobile-close"></use>
+                <use class="icon-menu" href="./images/icons1.svg#icon-menu"></use>
+                <use class="icon-cross" href="./images/icons1.svg#icon-mobile-close"></use>
             </svg>
         </button>
         </li>
@@ -50,7 +54,7 @@
             </li>
         </ul>
     </div>
-        </div>
+</div>
     </header>
 
     <main>
@@ -66,6 +70,7 @@
     </div>
     </div>
     </section>
+
     <section class="feature-section">
         <div class="container">
             <!-- заголовок, который  будет скрыт с помощью CSS -->
@@ -75,7 +80,7 @@
                 <li class="grid__item feature__item">
                     <div class="feature__wrapper">
                         <svg class="feature__icon" width="107" height="107">
-                            <use href="./images/feature /inspired.svg" ></use>
+                            <use href="./images/icons.svg#icon-inspired"></use>
                         </svg>
                     </div>
                     <div class="feature__content">
@@ -153,26 +158,26 @@
             <span>- Michael Dawson, San Francisco, CA -</span>
         </div>
             <svg class="reviews__icon" width="50" height="10">
-                <use href="./images/rewiews/dots.svg" ></use>
+                <use href="./images/icons.svg#icon-dots" ></use>
             </svg>
         </div>
 </section>
 <section class="gallery">
-    <div class="container">
+    <div class="container gallery__container">
     <h2 class="secondary-title">BROWSE BY CUISINES</h2>
     <ul class="gallery__list list">
         <li class="gallery__item ">
             <div class="gallery__wrapper">
-                <img src="./images/recipes/italian.jpg" width="230" height = "225" alt = "italian">
+                <img src="./images/recipes/italian.jpg" width="320" height = "225" alt = "italian">
                 <div class="gallery__actions">
-                    <p class="gallery__text">327 Recipes</p>
+                    <p class="gallery__text">327  Recipes</p>
                     <h3 class="gallery__title">ITALIAN</h3>
                 </div>
             </div>
         </li>
         <li class="gallery__item ">
             <div class="gallery__wrapper">
-                <img src="./images/recipes/indian.jpg" width = "230" height = "225" alt = "indian">
+                <img src="./images/recipes/indian.jpg" width = "320" height = "225" alt = "indian">
                 <div class="gallery__actions">
                     <p class="gallery__text">856 Recipes</p>
                     <h3 class="gallery__title">INDIAN</h3>
@@ -181,7 +186,7 @@
         </li>
         <li class="gallery__item ">
             <div class="gallery__wrapper">
-                <img src="./images/recipes/french.jpg" width = "230" height = "225" alt = "french">
+                <img src="./images/recipes/french.jpg" width = "320" height = "225" alt = "french">
                 <div class="gallery__actions">
                     <p class="gallery__text">27 Recipes</p>
                     <h3 class="gallery__title">FRENCH</h3>
@@ -190,16 +195,16 @@
         </li>
         <li class="gallery__item ">
             <div class="gallery__wrapper">
-            <img src="./images/recipes/steakhouse.jpg" width = "230" height = "225" alt = "steakhouse">
+            <img  src="./images/recipes/steakhouse.jpg" width = "320" height = "225" alt = "steakhouse">
             <div class="gallery__actions">
-                <p class="gallery__text">174 Recipes</p>
+                <p class="gallery__text">174  Recipes</p>
                 <h3 class="gallery__title">STEAKHOUSE</h3>
             </div>
         </div>
         </li class="gallery__item ">
         <li class="gallery__item ">
             <div class="gallery__wrapper">
-            <img src="./images/recipes/seafood.jpg" width = "230" height = "225" alt = "seafood">
+            <img  src="./images/recipes/seafood.jpg" width = "320" height = "225" alt = "seafood">
             <div class="gallery__actions">
                 <p class="gallery__text">731 Recipes</p>
                 <h3 class="gallery__title">SEAFOOD</h3>
@@ -208,7 +213,7 @@
         </li>
         <li class="gallery__item ">
             <div class="gallery__wrapper">
-            <img src="./images/recipes/sushi.jpg" width = "230" height = "225" alt = "sushi">
+            <img  src="./images/recipes/sushi.jpg" width = "320" height = "225" alt = "sushi">
             <div class="gallery__actions">
                 <p class="gallery__text">237 Recipes</p>
                 <h3 class="gallery__title">SUSHI</h3>
@@ -217,7 +222,7 @@
         </li>
         <li class="gallery__item ">
             <div class="gallery__wrapper">
-            <img src="./images/recipes/mexican.jpg" width = "230" height = "225" alt = "mexican">
+            <img  src="./images/recipes/mexican.jpg" width = "320" height = "225" alt = "mexican">
             <div class="gallery__actions">
                 <p class="gallery__text">529 Recipes</p>
                 <h3 class="gallery__title">MEXICAN</h3>
@@ -226,7 +231,7 @@
         </li>
         <li class="gallery__item ">
             <div class="gallery__wrapper">
-            <img src="./images/recipes/chinese.jpg" width = "230" height = "225" alt = "chinese">
+            <img  src="./images/recipes/chinese.jpg" width = "320" height = "225" alt = "chinese">
             <div class="gallery__actions">
                 <p class="gallery__text">145 Recipes</p>
                 <h3 class="gallery__title">CHINESE</h3>
@@ -235,7 +240,7 @@
         </li>
         <li class="gallery__item ">
             <div class="gallery__wrapper">
-            <img src="./images/recipes/pizza.jpg" width = "230" height = "225" alt = "pizza">
+            <img  src="./images/recipes/pizza.jpg" width = "320" height = "225" alt = "pizza">
             <div class="gallery__actions">
                 <p class="gallery__text">327 Recipes</p>
                 <h3 class="gallery__title">PIZZA</h3>
@@ -244,7 +249,7 @@
         </li>
         <li class="gallery__item">
             <div class="gallery__wrapper">
-            <img src="./images/recipes/american.jpg" width = "230" height = "225" alt = "american">
+            <img  src="./images/recipes/american.jpg" width = "320" height = "225" alt = "american">
             <div class="gallery__actions">
                 <p class="gallery__text">1.437 Recipes</p>
                 <h3 class="gallery__title">AMERICAN</h3>
