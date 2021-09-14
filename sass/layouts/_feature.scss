@@ -35,6 +35,7 @@
   .feature__wrapper {
     background-color: var(--secondary-background);
     display: flex;
+    
     justify-content: center;
     align-items: center;
     width: 100%;
@@ -49,6 +50,7 @@
   .feature__title {
     color: var(--title-text);
     padding-bottom: 10px;
+    border-bottom: 1px solid red;
   
     @media screen and (max-width: 768px) {
       text-align: center;
@@ -65,3 +67,6 @@
     margin-bottom: 20px;
   }
   
+.feature__line{
+  display: block;
+}

@@ -453,6 +453,7 @@ img {
 .modal {
   max-height: 581px;
   background-color: #402642;
+  background-image: linear-gradient(to bottom, #321a3e, #482e45, #8a6b5a);
   padding-top: 40px;
   padding-bottom: 40px;
   padding-right: 39px;
@@ -520,6 +521,11 @@ img {
   color: var(--accent);
 }
 
+.modal-button {
+  background-color: #321a3e;
+  border-radius: 50%;
+}
+
 .modal-form__input {
   font-weight: 700;
   padding: 16px 15px;
@@ -544,7 +550,7 @@ img {
 }
 
 .modal-form__field:focus-within .modal-form__icon {
-  fill: var(--accent);
+  fill: orange;
 }
 
 @media screen and (max-width: 1199px) {
@@ -562,7 +568,7 @@ img {
   padding-left: 42px;
   padding-top: 11px;
   padding-bottom: 11px;
-  border: 1px solid var(--modal-border-color);
+  border: 1px solid #321a3e;
   border-radius: 4px;
   transition-property: border-color;
   transition-duration: 250ms;
@@ -586,14 +592,9 @@ img {
   }
 }
 
-.modal-form__icon {
-  position: absolute;
-  top: 50%;
-  left: 12px;
-  transform: translateY(-50%);
-  transition-property: fill;
-  transition-duration: 250ms;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+.modal__icon {
+  fill: white;
+  background-color: #321a3e;
 }
 
 .modal-form__input:nth-last-child(2) {
@@ -920,6 +921,9 @@ label {
 .reviews {
   padding-top: 84px;
   padding-bottom: 81px;
+  background-image: url(/images/rewiews/Layer_17.png);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .reviews__icon {
@@ -996,6 +1000,7 @@ label {
 .feature__title {
   color: var(--title-text);
   padding-bottom: 10px;
+  border-bottom: 1px solid red;
 }
 
 @media screen and (max-width: 768px) {
@@ -1012,6 +1017,10 @@ label {
 
 .feature__icon {
   margin-bottom: 20px;
+}
+
+.feature__line {
+  display: block;
 }
 
 .gallery {
@@ -1071,15 +1080,6 @@ label {
   letter-spacing: 1.8px;
 }
 
-#bg {
-  position: fixed;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  min-width: 100%;
-  min-height: 100%;
-}
-
 .introduction {
   background-color: var(--bg-color);
 }
@@ -1126,8 +1126,11 @@ label {
   margin-bottom: 12px;
 }
 
-.footer-container {
+.footer {
   background-color: var(--bg-color);
+}
+
+.footer-container {
   display: flex;
   justify-content: space-between;
 }
