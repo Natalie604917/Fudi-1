@@ -9,15 +9,22 @@
 .introduction__title{
 padding-top: 182px;
 margin-bottom: 30px;
+@media screen and (max-width: 767.98px) {
+  font-size: 14px;
+}
 }
 
 .introduction__content{
   max-width: 543px;
   height: 300px;
+  padding:20px 0;
 }
 
 .introduction__text{
 margin-bottom: 29px;
+@media screen and (max-width: 767.98px) {
+  font-size: 12px;
+}
 }
 .introduction__item:not(:last-child){
 margin-right: 10px;
@@ -25,4 +32,5 @@ margin-right: 10px;
 .introduction__image{
 margin-top: 102px;
 height: 779px;
+
 }

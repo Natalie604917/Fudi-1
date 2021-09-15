@@ -2,16 +2,21 @@
 .statistics{
     padding: 60px 0;
 }
-
 .statistics__list{
-    display: flex;
-    justify-content: space-between;
-    text-align: center;
+    justify-content: space-evenly;
+}
+
+.statistics__text{
+    @media screen and (max-width: 767.98px) {
+font-size: 12px;
+}
 }
 
 .statistics__label{
     margin-bottom: 12px;
+    @media screen and (max-width: 767.98px) {
+        font-size: 10px;
 }
-
+}
 
 

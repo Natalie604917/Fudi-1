@@ -351,6 +351,12 @@ img {
   opacity: 0.5;
 }
 
+@media screen and (max-width: 767.98px) {
+  .copyright {
+    font-size: 10px;
+  }
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -802,8 +808,8 @@ label {
   justify-content: space-between;
 }
 
-.menu-filters__item:not(:first-child) {
-  margin-left: 30px;
+.menu-filters__item {
+  margin-right: 30px;
 }
 
 .menu-filters {
@@ -811,14 +817,22 @@ label {
   align-items: center;
 }
 
+@media screen and (max-width: 768px) {
+  .menu-filters {
+    display: none;
+  }
+}
+
 .navigation {
   display: flex;
   padding: 50px 0;
-  margin-right: 83px;
 }
 
-.logo {
-  margin-left: 82px;
+@media screen and (max-width: 768px) {
+  .logo {
+    width: 70px;
+    height: 70px;
+  }
 }
 
 .secondary-button {
@@ -834,8 +848,23 @@ label {
   min-height: 100vh;
   padding-top: 237px;
   padding-bottom: 240px;
-  background-image: url(/images/hero/main_image.jpg);
+  background-color: var(--dark-bg-color);
   background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+@media screen and (min-width: 320px) {
+  .hero {
+    background-image: url(/images/hero/main_image.jpg);
+    max-width: 1600px;
+  }
+}
+
+@media screen and (min-width: 320px) and (min-device-pixel-ratio: 2), screen and (min-width: 320px) and (min-resolution: 192dpi), screen and (min-width: 320px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url(/images/hero/main_image@2x.jpg);
+  }
 }
 
 .hero__container {
@@ -864,7 +893,7 @@ label {
 .hero__text--accent {
   opacity: 0.7;
   text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
-  color: #ffffff;
+  color: var(--secondary-text-color);
   font-family: 'times_new_roman_psbold_italic', sans-serif;
   font-size: 36px;
   font-weight: 400;
@@ -924,6 +953,12 @@ label {
   background-image: url(/images/rewiews/Layer_17.png);
   background-repeat: no-repeat;
   background-size: cover;
+}
+
+@media screen and (max-width: 767.98px) {
+  .reviews {
+    padding: 60px 0;
+  }
 }
 
 .reviews__icon {
@@ -1028,6 +1063,13 @@ label {
   padding-bottom: 59px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .gallery {
+    padding-bottom: 0;
+    padding-top: 60px;
+  }
+}
+
 .gallery__container {
   text-align: center;
   max-width: 1600px;
@@ -1056,8 +1098,20 @@ label {
   margin-top: 51px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .gallery__list {
+    margin-top: 10px;
+  }
+}
+
 .gallery__item {
   flex-basis: calc(100%/5);
+}
+
+@media screen and (max-width: 767.98px) {
+  .gallery__item {
+    flex-basis: calc(100%/2);
+  }
 }
 
 .gallery__title {
@@ -1094,13 +1148,26 @@ label {
   margin-bottom: 30px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .introduction__title {
+    font-size: 14px;
+  }
+}
+
 .introduction__content {
   max-width: 543px;
   height: 300px;
+  padding: 20px 0;
 }
 
 .introduction__text {
   margin-bottom: 29px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .introduction__text {
+    font-size: 12px;
+  }
 }
 
 .introduction__item:not(:last-child) {
@@ -1117,13 +1184,23 @@ label {
 }
 
 .statistics__list {
-  display: flex;
-  justify-content: space-between;
-  text-align: center;
+  justify-content: space-evenly;
+}
+
+@media screen and (max-width: 767.98px) {
+  .statistics__text {
+    font-size: 12px;
+  }
 }
 
 .statistics__label {
   margin-bottom: 12px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .statistics__label {
+    font-size: 10px;
+  }
 }
 
 .footer {
@@ -1135,6 +1212,13 @@ label {
   justify-content: space-between;
 }
 
+@media screen and (max-width: 767.98px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
 .footer__link {
   font-size: 14px;
   color: var(--copyright-color);
@@ -1142,10 +1226,22 @@ label {
   letter-spacing: 2.8px;
 }
 
+@media screen and (max-width: 767.98px) {
+  .footer__link {
+    font-size: 10px;
+  }
+}
+
 .footer__link--accent {
   font-size: 14px;
   color: var(--primary-text-color);
   font-weight: 400;
   letter-spacing: 2.8px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .footer__link--accent {
+    font-size: 10px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

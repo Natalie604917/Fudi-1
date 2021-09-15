@@ -5,12 +5,19 @@
 .footer-container{
 display: flex;
 justify-content: space-between;
+@media screen and (max-width: 767.98px) {
+    flex-direction: column;
+    align-items: center;
+}
 }
 .footer__link{
 font-size: 14px;
 color: var(--copyright-color);
 font-weight: 300;
 letter-spacing: 2.8px;
+@media screen and (max-width: 767.98px) {
+    font-size: 10px;
+}
 }
 
 .footer__link--accent{
@@ -18,4 +25,8 @@ font-size: 14px;
 color: var(--primary-text-color);
 font-weight: 400;
 letter-spacing: 2.8px;
+
+@media screen and (max-width: 767.98px) {
+    font-size: 10px;
+}
 }
