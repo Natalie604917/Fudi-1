@@ -399,7 +399,6 @@ img {
   background-color: transparent;
   width: 40px;
   height: 40px;
-  margin-left: auto;
   fill: var(--secondary-text-color);
 }
 
@@ -430,6 +429,7 @@ img {
     height: 100%;
     z-index: 105;
     background-color: var(--form-color);
+    background-image: linear-gradient(to bottom, #321a3e, #482e45, #8a6b5a);
     padding: 48px 40px;
   }
 }
@@ -574,6 +574,7 @@ img {
   padding-left: 42px;
   padding-top: 11px;
   padding-bottom: 11px;
+  color: var(--secondary-text-color);
   border: 1px solid #321a3e;
   border-radius: 4px;
   transition-property: border-color;
@@ -774,6 +775,13 @@ label {
   padding-left: 0;
 }
 
+.filters {
+  background-color: transparent;
+  margin-right: 30px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+}
+
 .grid {
   display: flex;
   flex-wrap: wrap;
@@ -823,8 +831,13 @@ label {
 
 .navigation {
   display: flex;
+  justify-content: flex-end;
   width: 100%;
   align-items: center;
+}
+
+.logo {
+  margin-right: auto;
 }
 
 @media screen and (max-width: 768px) {
@@ -981,6 +994,12 @@ label {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 40px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .feature-section {
+    padding-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1147,8 +1166,27 @@ label {
 .introduction__action {
   display: flex;
   position: absolute;
-  top: 28%;
-  right: 57%;
+  width: 100%;
+}
+
+@media screen and (max-width: 767.98px) {
+  .introduction__action {
+    top: 120px;
+    right: 200px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .introduction__action {
+    top: 255px;
+    right: -70px;
+  }
+}
+
+@media screen and (max-width: 767.98px) {
+  .introduction__action {
+    width: 45%;
+  }
 }
 
 .introduction__title {
@@ -1158,6 +1196,8 @@ label {
 
 @media screen and (max-width: 767.98px) {
   .introduction__title {
+    padding-top: 30px;
+    margin-bottom: 15px;
     font-size: 14px;
   }
 }
@@ -1165,7 +1205,13 @@ label {
 .introduction__content {
   max-width: 543px;
   height: 300px;
-  padding: 20px 0;
+  padding: 0 20px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .introduction__content {
+    padding: 0 10px;
+  }
 }
 
 .introduction__text {
@@ -1174,7 +1220,8 @@ label {
 
 @media screen and (max-width: 767.98px) {
   .introduction__text {
-    font-size: 12px;
+    font-size: 10px;
+    margin-bottom: 10px;
   }
 }
 
@@ -1185,6 +1232,14 @@ label {
 .introduction__image {
   margin-top: 102px;
   height: 779px;
+}
+
+@media screen and (max-width: 767.98px) {
+  .introduction__image {
+    margin-top: 50px;
+    width: 60%;
+    height: 60%;
+  }
 }
 
 .statistics {

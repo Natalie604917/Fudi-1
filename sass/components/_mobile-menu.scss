@@ -6,7 +6,6 @@
     background-color: transparent;
     width: 40px;
     height: 40px;
-    margin-left: auto;
     fill: var(--secondary-text-color);
 
     & .icon-cross{
@@ -37,6 +36,7 @@
     height: 100%;
     z-index: 105;
     background-color:var(--form-color);
+    background-image: linear-gradient(to bottom , #321a3e, #482e45, #8a6b5a);
     padding: 48px 40px;
     }
  

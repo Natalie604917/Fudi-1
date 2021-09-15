@@ -27,17 +27,18 @@ text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
 background-color: transparent;
 align-items: center;
 @media screen and (max-width: 768px) {
-  display: none;
-}
+  display: none;}
+
 }
 .navigation{
   display: flex;
+  justify-content: flex-end;
   width: 100%;
   align-items: center;
 }
 
 .logo{
-  
+  margin-right: auto;
   @media screen and (max-width: 768px) {
     width:70px;
     height: 70px;
