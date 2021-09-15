@@ -897,7 +897,7 @@ label {
 @media screen and (min-width: 320px) {
   .hero {
     background-image: url(/images/hero/main_image.jpg);
-    max-width: 1200px;
+    max-width: 1600px;
   }
 }
 
