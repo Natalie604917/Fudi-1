@@ -15,8 +15,6 @@ text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
 
 .page-header__container{
   display: flex;
-  align-items: center;
-  justify-content: space-between
   
 }
 
@@ -34,8 +32,8 @@ align-items: center;
 }
 .navigation{
   display: flex;
-  padding: 50px 0;
-  
+  width: 100%;
+  align-items: center;
 }
 
 .logo{

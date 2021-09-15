@@ -15,28 +15,27 @@
 <body>
     <header class="page-header">
         <div class="container page-header__container">
+            <nav class="navigation">
             <a class="link logo" href="./index.html"> 
             <img src="./images/logo/logo.png" alt="logo">
-        </a>
-            <nav class="navigation">
+            </a>
             <ul class="list menu-filters">
-            <li class="menu-filters__item">
-            <button data-modal-open type="button" class= "menu-filters secondary-button">LOG IN</button> 
-            </li>
-            <li class="menu-filters__item"> 
-                <button data-modal1-open type="button" class="menu-filters secondary-button">SIGN UP</button>
-            </li>
-        <li class="menu-filters__item">
-        <button type="button" class="menu-filters menu-btn" data-menu-button>
-            <svg class="menu-btn__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-                <use class="icon-menu" href="./images/icons1.svg#icon-menu"></use>
-                <use class="icon-cross" href="./images/icons1.svg#icon-mobile-close"></use>
-            </svg>
-        </button>
-        </li>
-        </ul>
-    </nav>
-    <div class="menu-container" data-menu>
+                <li class="menu-filters__item">
+                <button data-modal-open type="button" class= "menu-filters secondary-button">LOG IN</button> 
+                </li>
+                <li class="menu-filters__item"> 
+                    <button data-modal1-open type="button" class="menu-filters secondary-button">SIGN UP</button>
+                </li>
+            </ul>
+            <button type="button" class="menu-filters menu-btn" data-menu-button>
+                <svg class="menu-btn__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                    <use class="icon-menu" href="./images/icons1.svg#icon-menu"></use>
+                    <use class="icon-cross" href="./images/icons1.svg#icon-mobile-close"></use>
+                </svg>
+            </button>
+        </nav>
+            
+        <div class="menu-container" data-menu>
         <ul class="list menu">
             <li class="menu__item">
                 <a class="link menu__link" href="./index.html">HOME</a>
@@ -120,6 +119,9 @@
         <section class="introduction">
             <div class="introduction__container container">
             <img class="introduction__image" src="./images/introducing/iPhone.png" width = "523" height = "779" alt = "fudi in app">
+            <div class="introduction__action">
+                <img src="./images/introducing/Nav_bar_-_Green-2.jpg" alt="phone">
+            </div>
             <div class="introduction__content">
             <h2 class="introduction__title secondary-title">INTRODUCING THE FUDI APP</h2>
             <p class="introduction__text">Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet 

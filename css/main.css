@@ -804,8 +804,6 @@ label {
 
 .page-header__container {
   display: flex;
-  align-items: center;
-  justify-content: space-between;
 }
 
 .menu-filters__item {
@@ -825,7 +823,8 @@ label {
 
 .navigation {
   display: flex;
-  padding: 50px 0;
+  width: 100%;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -1136,11 +1135,20 @@ label {
 
 .introduction {
   background-color: var(--bg-color);
+  overflow: hidden;
 }
 
 .introduction__container {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
+  position: relative;
+}
+
+.introduction__action {
+  display: flex;
+  position: absolute;
+  top: 28%;
+  right: 57%;
 }
 
 .introduction__title {
@@ -1185,6 +1193,7 @@ label {
 
 .statistics__list {
   justify-content: space-evenly;
+  text-align: center;
 }
 
 @media screen and (max-width: 767.98px) {

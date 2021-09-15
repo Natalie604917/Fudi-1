@@ -1,10 +1,19 @@
 .introduction{
   background-color: var(--bg-color);
+  overflow: hidden;
 }
 
 .introduction__container{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
+    position: relative;
+}
+.introduction__action{
+  display: flex;
+  position: absolute;
+  top: 28%;
+  right: 57%;
+
 }
 .introduction__title{
 padding-top: 182px;
