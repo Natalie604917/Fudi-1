@@ -371,6 +371,12 @@ img {
   color: var(--accent);
 }
 
+.carousel {
+  width: 150px;
+  height: 150px;
+  display: -webkit-inline-flex;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -974,6 +980,11 @@ label {
   color: var(--secondary-text-color);
 }
 
+.carousel {
+  width: 150px;
+  height: 150px;
+}
+
 .reviews {
   padding-top: 84px;
   padding-bottom: 81px;
@@ -995,6 +1006,9 @@ label {
 }
 
 .reviews__container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   text-align: center;
 }
 
@@ -1002,6 +1016,8 @@ label {
   margin-bottom: 31px;
   margin-left: auto;
   margin-right: auto;
+  border-radius: 50%;
+  background-color: #4a3949;
 }
 
 .reviews__content {

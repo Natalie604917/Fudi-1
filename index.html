@@ -11,6 +11,10 @@
 <link rel="stylesheet" href="./css/fonts.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.2.0/modern-normalize.min.css">
 <link rel="stylesheet" href="./css/main.css">
+
+<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+// Add the new slick-theme.css if you want the default styling
+<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 </head>
 <body>
     <header class="page-header">
@@ -154,23 +158,29 @@
         </section>
     <section class="reviews dark-bg">
         <div class="container reviews__container">
-        <h2 class="secondary-title visually-hidden">Rewiew</h2>
-        <img class="reviews__image" src="./images/rewiews/Dawson.jpg" width = "104" height = "104" alt="Michael Dawson">
-        <div class="reviews__content">
-        <p>“I am so happy because I found this recipe, and it just made my life easier.
-            Thanks  so much for sharing!”</p>
+            <div class="carousel">
+            <h2 class="secondary-title visually-hidden">Rewiew</h2>
+            <img class="reviews__image" src="./images/rewiews/Dawson.jpg" width = "104" height = "104" alt="Michael Dawson">
+            <img class="reviews__image" src="./images/rewiews/Elvis.png" alt="Elvis">
+            <img class="reviews__image" src="./images/rewiews/people.png" alt="people">
+            </div>
+            <div class="reviews__content">
+            <p>“I am so happy because I found this recipe, and it just made my life easier.
+                Thanks  so much for sharing!”</p>
             <span>- Michael Dawson, San Francisco, CA -</span>
-        </div>
-            <svg class="reviews__icon" width="50" height="10">
+            </div>
+            </div>
+            <!-- <svg class="reviews__icon" width="50" height="10">
                 <use href="./images/icons1.svg#icon-dots" ></use>
-            </svg>
+            </svg> -->
         </div>
 </section>
 <section class="gallery">
+
     <div class="container gallery__container">
     <h2 class="secondary-title">BROWSE BY CUISINES</h2>
     <ul class="gallery__list list">
-        <li class="gallery__item ">
+        <li class="gallery__item">
             <div class="gallery__wrapper">
                 <img src="./images/recipes/italian.jpg" width = "320" height = "225" alt = "seafood">  
                 <div class="gallery__actions">
@@ -384,5 +394,19 @@
 <script src="./js/mobile-menu.js"></script>
 <script src="./js/modal.js"></script>
 <script src="./js/modal1.js"></script>
+
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.carousel').slick({
+        infinite: true,
+        dots: true,
+        slidesToShow: 1,
+        slidesToScroll: 1
+    });
+  });
+</script>
 </body>
 </html>
