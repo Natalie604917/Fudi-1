@@ -357,6 +357,16 @@ img {
   }
 }
 
+.secondary-button {
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 2.14;
+  letter-spacing: 0.7px;
+  text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
+  color: var(--secondary-text-color);
+  border: transparent;
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -847,15 +857,6 @@ label {
   }
 }
 
-.secondary-button {
-  font-size: 14px;
-  font-weight: 700;
-  line-height: 2.14;
-  letter-spacing: 0.7px;
-  text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
-  color: var(--secondary-text-color);
-}
-
 .hero {
   min-height: 100vh;
   padding-top: 237px;
@@ -937,6 +938,7 @@ label {
 .hero__button {
   color: var(--secondary-text-color);
   background-color: transparent;
+  border: 1px solid white;
   font-weight: 700;
   font-size: 18px;
   line-height: 0.84;
@@ -1299,7 +1301,7 @@ label {
 .footer__link--accent {
   font-size: 14px;
   color: var(--primary-text-color);
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 2.8px;
 }
 
