@@ -86,6 +86,9 @@ padding-bottom: 30px;
 padding-left: 82px;
 padding-right: 80px;
 margin-bottom: 41px;
+&:hover{
+  color: var(--accent);
+}
 }
 
 .text-link{

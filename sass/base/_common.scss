@@ -102,5 +102,7 @@ opacity: 0.5;
   text-shadow: -1px 1px 40px rgba(1, 1, 1, 0.55);
   color:var(--secondary-text-color);
   border: transparent;
-
+&:hover{
+  color: var(--accent);
+}
   }

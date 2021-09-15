@@ -367,6 +367,10 @@ img {
   border: transparent;
 }
 
+.secondary-button:hover {
+  color: var(--accent);
+}
+
 .container {
   width: 100%;
   padding-left: 15px;
@@ -615,6 +619,10 @@ img {
   background-color: #321a3e;
 }
 
+.modal__icon:hover {
+  fill: var(--accent);
+}
+
 .modal-form__input:nth-last-child(2) {
   padding: 12px 16px;
 }
@@ -654,9 +662,9 @@ label {
 }
 
 .modal-filter {
-  display: flex;
   text-align: center;
   background-color: #600035;
+  width: 100%;
 }
 
 .menu {
@@ -951,6 +959,10 @@ label {
   padding-left: 82px;
   padding-right: 80px;
   margin-bottom: 41px;
+}
+
+.hero__button:hover {
+  color: var(--accent);
 }
 
 .text-link {
