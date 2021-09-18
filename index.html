@@ -1,423 +1,439 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fudi</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,100&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,700;1,100&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.2.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.css">
 
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css" />
 
-    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
+    <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
+
 <body>
     <header class="page-header">
         <div class="container page-header__container">
             <nav class="navigation">
-            <a class="link logo" href="./index.html"> 
-                <img src="./images/logo/logo.png" alt="logo">
-            </a>
-            <ul class="list menu-filters">
-                <li class="menu-filters__item">
-                <button data-modal-open type="button" class= "menu-filters secondary-button">LOG IN</button> 
-                </li>
-                <li class="menu-filters__item"> 
-                    <button data-modal1-open type="button" class="menu-filters secondary-button">SIGN UP</button>
-                </li>
-            </ul>
-            <button type="button" class="menu-btn" data-menu-button>
-                <svg class="menu-btn__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
-                    <use class="icon-menu" href="./images/icons1.svg#icon-menu"></use>
-                    <use class="icon-cross" href="./images/icons1.svg#icon-mobile-close"></use>
-                </svg>
-            </button>
-        </nav>
-            
-        <div class="menu-container" data-menu>
-        <ul class="list menu">
-            <li class="menu__item">
-                <a class="link menu__link" href="./index.html">HOME</a>
-            </li>
-            <li class="menu__item">
-                <a class="link menu__link" href="./">RECIPES</a>
-            </li>
-            <li class="menu__item">
-                <a class="link menu__link" href="./">SHOPS</a>
-            </li>
-            <li class="menu__item">
-                <a class="link menu__link" href="./">CONTACTS</a>
-            </li>
-        </ul>
-        <ul class="list filters">
-            <li class="filters__item">
-            <button data-modal-open type="button" class= "filters secondary-button">LOG IN</button> 
-            </li>
-            <li class="filters__item"> 
-                <button data-modal1-open type="button" class="filters secondary-button">SIGN UP</button>
-            </li>
-        </ul>
-    </div>
-</div>
+                <a class="link logo" href="./index.html">
+                    <img src="./images/logo/logo.png" alt="logo">
+                </a>
+                <ul class="list menu-filters">
+                    <li class="menu-filters__item">
+                        <button data-modal-open type="button" class="menu-filters secondary-button">LOG IN</button>
+                    </li>
+                    <li class="menu-filters__item">
+                        <button data-modal1-open type="button" class="menu-filters secondary-button">SIGN UP</button>
+                    </li>
+                </ul>
+                <button type="button" class="menu-btn" data-menu-button>
+                    <svg class="menu-btn__icon" width="40" height="40" aria-label="Переключатель мобильного меню">
+                        <use class="icon-menu" href="./images/icons1.svg#icon-menu"></use>
+                        <use class="icon-cross" href="./images/icons1.svg#icon-mobile-close"></use>
+                    </svg>
+                </button>
+            </nav>
+
+            <div class="menu-container" data-menu>
+                <ul class="list menu">
+                    <li class="menu__item">
+                        <a class="link menu__link" href="./index.html">HOME</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link menu__link" href="./">RECIPES</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link menu__link" href="./">SHOPS</a>
+                    </li>
+                    <li class="menu__item">
+                        <a class="link menu__link" href="./">CONTACTS</a>
+                    </li>
+                </ul>
+                <ul class="list filters">
+                    <li class="filters__item">
+                        <button data-modal-open type="button" class="filters secondary-button">LOG IN</button>
+                    </li>
+                    <li class="filters__item">
+                        <button data-modal1-open type="button" class="filters secondary-button">SIGN UP</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
     </header>
 
     <main>
-    <section class="hero dark-bg">
-        <div class="hero__container">
-            <div class="hero__content"> 
-        <p class="hero__text--accent">Find your Favorite</p>
-        <h1 class="hero__title">RECIPES</h1>
-        <button type="button" class="hero__button">GET STARTED</button>
-        <p class="text-link">OR SEND US YOUR OWN RECIPES AND
-            <a class="link" href="">GET REWARDED!</a>
-        </p>
-    </div>
-    </div>
-    </section>
-
-    <section class="feature-section">
-        <div class="container">
-            <!-- заголовок, который  будет скрыт с помощью CSS -->
-            <h2 class="secondary-title visually-hidden">features</h2>
-
-            <ul class="grid feature">
-                <li class="grid__item feature__item">
-                    <div class="feature__wrapper">
-                        <img src="./images/feature /inspired.png" alt="INSPIRED">
-                        
-                    </div>
-                    <div class="feature__content">
-                        <h3 class="feature__title secondary-title">GET INSPIRED</h3>
-                        <p class="feature__text"> Lorem ipsum dolor sit amet, consectetur adipisc 
-                            Pellentesque vel enim a elit viverra elementuma.
-                             Aliquam erat volutpat. 
-                        </p>
-                   </div>
-                </li>
-                
-               <li class="grid__item feature__item">
-                    <div class="feature__wrapper">
-                    <img src="./images/feature /rewarded.png" alt="REWARDED">
-                    
-                    </div>
-                   <div class="feature__content">
-                    <h3 class="feature__title secondary-title">GET REWARDED</h3>
-                    <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisc 
-                        Pellentesque vel enim a elit viverra elementuma.
-                         Aliquam erat volutpat. 
+        <section class="hero dark-bg">
+            <div class="hero__container">
+                <div class="hero__content">
+                    <p class="hero__text--accent">Find your Favorite</p>
+                    <h1 class="hero__title">RECIPES</h1>
+                    <button type="button" class="hero__button">GET STARTED</button>
+                    <p class="text-link">OR SEND US YOUR OWN RECIPES AND
+                        <a class="link" href="">GET REWARDED!</a>
                     </p>
-                   </div>
-                </li>
-               <li class="grid__item feature__item">
-                    <div class="feature__wrapper">
-                        <img src="./images/feature /social.png" alt="SOCIAL">
-                    </div>
-                   <div class="feature__content">
-                          <h3 class="feature__title secondary-title">GET SOCIAL</h3>
-                          <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisc 
-                            Pellentesque vel enim a elit viverra elementuma.
-                             Aliquam erat volutpat. 
-                          </p>
-                   </div>
-               </li>
-             </ul>
-        </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-section">
+            <div class="container">
+                <!-- заголовок, который  будет скрыт с помощью CSS -->
+                <h2 class="secondary-title visually-hidden">features</h2>
+
+                <ul class="grid feature">
+                    <li class="grid__item feature__item">
+                        <div class="feature__wrapper">
+                            <img src="./images/feature /inspired.png" alt="INSPIRED">
+
+                        </div>
+                        <div class="feature__content">
+                            <h3 class="feature__title secondary-title">GET INSPIRED</h3>
+                            <p class="feature__text"> Lorem ipsum dolor sit amet, consectetur adipisc
+                                Pellentesque vel enim a elit viverra elementuma.
+                                Aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </li>
+
+                    <li class="grid__item feature__item">
+                        <div class="feature__wrapper">
+                            <img src="./images/feature /rewarded.png" alt="REWARDED">
+
+                        </div>
+                        <div class="feature__content">
+                            <h3 class="feature__title secondary-title">GET REWARDED</h3>
+                            <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisc
+                                Pellentesque vel enim a elit viverra elementuma.
+                                Aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </li>
+                    <li class="grid__item feature__item">
+                        <div class="feature__wrapper">
+                            <img src="./images/feature /social.png" alt="SOCIAL">
+                        </div>
+                        <div class="feature__content">
+                            <h3 class="feature__title secondary-title">GET SOCIAL</h3>
+                            <p class="feature__text">Lorem ipsum dolor sit amet, consectetur adipisc
+                                Pellentesque vel enim a elit viverra elementuma.
+                                Aliquam erat volutpat.
+                            </p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
         </section>
         <section class="introduction">
             <div class="introduction__container container">
-            <img class="introduction__image" src="./images/introducing/iPhone.png" width = "523" height = "779" alt = "fudi in app">
-            <div class="introduction__action">
-                <img src="./images/introducing/Nav_bar_-_Green-2.jpg" alt="phone">
+                <img class="introduction__image" src="./images/introducing/iPhone.png" width="523" height="779"
+                    alt="fudi in app">
+                <div class="introduction__action">
+                    <img src="./images/introducing/Nav_bar_-_Green-2.jpg" alt="phone">
+                </div>
+                <div class="introduction__content">
+                    <h2 class="introduction__title secondary-title">INTRODUCING THE FUDI APP</h2>
+                    <p class="introduction__text">Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet.
+                        Aeneanet
+                        felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest
+                        ibulum tristique. Suspendisse tristique lacus ac mattis porta.
+
+                        Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In
+                        libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas
+                        sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis.
+                        Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan.
+
+                        Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam
+                        malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices
+                        ante, a mattis massa. </p>
+
+                    <ul class="list introduction__list">
+                        <li class="introduction__item"><img src="./images/introducing/appstore.png" width="112"
+                                height="39" alt="appstore"></li>
+                        <li class="introduction__item"><img src="./images/introducing/google.png" width="120"
+                                height="39" alt="google"></li>
+                    </ul>
+                </div>
             </div>
-            <div class="introduction__content">
-            <h2 class="introduction__title secondary-title">INTRODUCING THE FUDI APP</h2>
-            <p class="introduction__text">Morbi eget posuere dolor. Pellentesque cursus aliquet aliquet. Aeneanet 
-                felis sit amet diam mollis ullamcorper. Nullam consequat sem a ante vest
-                ibulum tristique. Suspendisse tristique lacus ac mattis porta. 
-                
-                Vivamus ligula quam, vehicula non lacinia sed, faucibus sit amet libero. In 
-                libero dui, eleifend eu nisi id, egestas fringilla odio. In varius quam a mas
-                sa hendrerit ullamcorper a eu justo. Suspendisse porta mattis convallis. 
-                Aenean tempus ligula ac odio rhoncus, quis aliquam dolor accumsan. 
-                
-                Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam 
-                malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices 
-                ante, a mattis massa. </p>
-            
-               <ul class="list introduction__list">
-                    <li class="introduction__item"><img src="./images/introducing/appstore.png" width = "112" height = "39" alt="appstore"></li>
-                    <li class="introduction__item"><img src="./images/introducing/google.png" width = "120" height = "39" alt="google"></li>
-                </ul>
+        </section>
+        <section class="reviews dark-bg">
+            <div class="container reviews__container">
+                <div class="carousel">
+                    <div class="reviews-thumb">
+                        <h2 class="secondary-title visually-hidden">Rewiew</h2>
+                        <img class="reviews__image" src="./images/rewiews/Dawson.jpg" width="150" height="150"
+                            alt="Michael Dawson">
+                        <div class="reviews__content">
+                            <p>“I am so happy because I found this recipe, and it just made my life easier.
+                                Thanks so much for sharing!”</p>
+                            <span>- Michael Dawson, San Francisco, CA -</span>
+                        </div>
+                    </div>
+                    <div class="reviews-thumb">
+                        <img class="reviews__image" src="./images/rewiews/Elvis.png" width="150" height="150"
+                            alt="James">
+                        <div class="reviews__content">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At distinctio ad officia
+                                assumenda alias atque ab optio molestias, quam debitis dignissimos unde architecto
+                                natus, nemo voluptates consequatur, minus consequuntur itaque.</p>
+                            <span>- James Larson, New York -</span>
+                        </div>
+                    </div>
+                    <div class="reviews-thumb">
+                        <img class="reviews__image" src="./images/rewiews/people.png" width="150" height="150"
+                            alt="people">
+                        <div class="reviews__content">
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At distinctio ad officia
+                                assumenda alias atque ab optio molestias, quam debitis dignissimos unde architecto
+                                natus, nemo voluptates consequatur, minus consequuntur itaque.</p>
+                            <span>- Ivan Ivanov, Kiev -</span>
+                        </div>
+                    </div>
+                </div>
             </div>
             </div>
         </section>
-    <section class="reviews dark-bg">
-        <div class="container reviews__container">
-            <div class="carousel">
-                <div class="reviews-thumb">
-                    <h2 class="secondary-title visually-hidden">Rewiew</h2>
-                    <img class="reviews__image" src="./images/rewiews/Dawson.jpg" width = "150" height = "150" alt="Michael Dawson">
-                        <div class="reviews__content">
-                            <p>“I am so happy because I found this recipe, and it just made my life easier.
-                                Thanks  so much for sharing!”</p>
-                            <span>- Michael Dawson, San Francisco, CA -</span>
+        <section class="gallery">
+
+            <div class="container gallery__container">
+                <h2 class="secondary-title">BROWSE BY CUISINES</h2>
+                <ul class="gallery__list list">
+                    <li class="gallery__item">
+                        <div class="gallery__wrapper">
+                            <img src="./images/recipes/italian.jpg" width="320" height="225" alt="seafood">
+                            <div class="gallery__actions">
+                                <p class="gallery__text">327 Recipes</p>
+                                <h3 class="gallery__title">ITALIAN</h3>
+                            </div>
                         </div>
-                </div>
-                <div class="reviews-thumb">
-                    <img class="reviews__image"  src="./images/rewiews/Elvis.png" width = "150" height = "150" alt="James">
-                        <div class="reviews__content">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At distinctio ad officia assumenda alias atque ab optio molestias, quam debitis dignissimos unde architecto natus, nemo voluptates consequatur, minus consequuntur itaque.</p>
-                            <span>- James Larson, New York -</span>
+                    </li>
+                    <li class="gallery__item ">
+                        <div class="gallery__wrapper">
+                            <img src="./images/recipes/indian.jpg" width="320" height="225" alt="seafood">
+                            <div class="gallery__actions">
+                                <p class="gallery__text">856 Recipes</p>
+                                <h3 class="gallery__title">INDIAN</h3>
+                            </div>
                         </div>
-                </div>
-                <div class="reviews-thumb">
-                        <img class="reviews__image" src="./images/rewiews/people.png" width = "150" height = "150" alt="people">
-                        <div class="reviews__content">
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. At distinctio ad officia assumenda alias atque ab optio molestias, quam debitis dignissimos unde architecto natus, nemo voluptates consequatur, minus consequuntur itaque.</p>
-                            <span>- Ivan Ivanov, Kiev -</span>
+                    </li>
+                    <li class="gallery__item ">
+                        <div class="gallery__wrapper">
+                            <img src="./images/recipes/french.jpg" width="320" height="225" alt="seafood">
+                            <div class="gallery__actions">
+                                <p class="gallery__text">27 Recipes</p>
+                                <h3 class="gallery__title">FRENCH</h3>
+                            </div>
                         </div>
+                    </li>
+                    <li class="gallery__item ">
+                        <div class="gallery__wrapper">
+                            <img src="./images/recipes/steakhouse.jpg" width="320" height="225" alt="seafood">
+                            <div class="gallery__actions">
+                                <p class="gallery__text">174 Recipes</p>
+                                <h3 class="gallery__title">STEAKHOUSE</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery__item ">
+                        <div class="gallery__wrapper">
+                            <img src="./images/recipes/seafood.jpg" alt="">
+                            <div class="gallery__actions">
+                                <p class="gallery__text">731 Recipes</p>
+                                <h3 class="gallery__title">SEAFOOD</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery__item ">
+                        <div class="gallery__wrapper">
+                            <img src="./images/recipes/sushi.jpg" width="320" height="225" alt="sushi">
+                            <div class="gallery__actions">
+                                <p class="gallery__text">237 Recipes</p>
+                                <h3 class="gallery__title">SUSHI</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery__item ">
+                        <div class="gallery__wrapper">
+                            <img src="./images/recipes/mexican.jpg" width="320" height="225" alt="mexican">
+                            <div class="gallery__actions">
+                                <p class="gallery__text">529 Recipes</p>
+                                <h3 class="gallery__title">MEXICAN</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery__item ">
+                        <div class="gallery__wrapper">
+                            <img src="./images/recipes/chinese.jpg" width="320" height="225" alt="chinese">
+                            <div class="gallery__actions">
+                                <p class="gallery__text">145 Recipes</p>
+                                <h3 class="gallery__title">CHINESE</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery__item ">
+                        <div class="gallery__wrapper">
+                            <img src="./images/recipes/pizza.jpg" width="320" height="225" alt="pizza">
+                            <div class="gallery__actions">
+                                <p class="gallery__text">327 Recipes</p>
+                                <h3 class="gallery__title">PIZZA</h3>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="gallery__item">
+                        <div class="gallery__wrapper">
+                            <img src="./images/recipes/american.jpg" width="320" height="225" alt="american">
+                            <div class="gallery__actions">
+                                <p class="gallery__text">1.437 Recipes</p>
+                                <h3 class="gallery__title">AMERICAN</h3>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="statistics">
+            <div class="container">
+                <h2 class="secondary-title visually-hidden">statistics</h2>
+                <ul class="statistics__list list">
+                    <li class="statistics__item">
+                        <span class="statistics__label">23,567</span>
+                        <p class="statistics__text">Recipes Available</p>
+                    </li>
+                    <li class="statistics__item">
+                        <span class="statistics__label">431,729</span>
+                        <p class="statistics__text">Active Users</p>
+                    </li>
+                    <li class="statistics__item">
+                        <span class="statistics__label">892,173</span>
+                        <p class="statistics__text">Positive Reviews </p>
+                    </li>
+                    <li class="statistics__item">
+                        <span class="statistics__label">56,581</span>
+                        <p class="statistics__text">Photos & Videos</p>
+                    </li>
+                    <li class="statistics__item">
+                        <span class="statistics__label">3,182</span>
+                        <p class="statistics__text">Spices and Herbs </p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-container container">
+            <p class="copyright">&copy; 2014 Fudi. All Rights Reserved.</p>
+            <a class="link footer__link" href="./">DESIGN BY:<span
+                    class="footer__link--accent">WWW.BEKADES.COM</span></a>
+        </div>
+    </footer>
+    <div data-modal class="backdrop is-hidden data-backdrop">
+        <div class="modal">
+            <button data-modal-close class="modal-button" aria-label="Close" onclick="myDialog.close()">
+                <svg class="modal__icon" width="18" height="18">
+                    <use href="./images/icons1.svg#icon-circle-left"></use>
+                </svg>
+            </button>
+
+            <form class="modal-form">
+                <div class="modal-form__thumb">
+                    <p class="modal__text">SIGN-UP</p>
                 </div>
+                <div class="modal-form__field">
+                    <label>
+                        <input class="modal-form__input" type="text" name="user-name" placeholder="Username">
+                    </label>
+                </div>
+                <div class="modal-form__field">
+                    <label>
+                        <input class="modal-form__input" type="tel" placeholder="Email">
+                    </label>
+                </div>
+                <div class="modal-form__field">
+                    <label>
+                        <input class="modal-form__input" type="text" name="mail" placeholder="password">
+                    </label>
+                </div>
+
+                <div class="modal-form__field">
+                    <label class="checkbox">
+                        <input class="checkbox__input visually-hidden" type="checkbox" name="agreement">
+                        <span class="checkbox__text">IF YOU ALREADY HAVE AN ACCOUNT</span>
+                        <a class="modal__link" href="./" target="_blank" rel="noopener norefferrer">LOG IN</a>
+                    </label>
+                </div>
+
+                <button class="secondary-button modal-filter" type="submit">
+                    SIGN UP
+                </button>
+            </form>
         </div>
     </div>
- </div>
-</section>
-<section class="gallery">
+    <div data-modal1 class="backdrop is-hidden data-backdrop">
+        <div class="modal">
+            <button data-modal1-close class="modal-button" aria-label="Close" onclick="myDialog.close()">
+                <svg class="modal__icon" width="18" height="18">
+                    <use href="./images/icons1.svg#icon-circle-left"></use>
+                </svg>
+            </button>
 
-    <div class="container gallery__container">
-    <h2 class="secondary-title">BROWSE BY CUISINES</h2>
-    <ul class="gallery__list list">
-        <li class="gallery__item">
-            <div class="gallery__wrapper">
-                <img src="./images/recipes/italian.jpg" width = "320" height = "225" alt = "seafood">  
-                <div class="gallery__actions">
-                    <p class="gallery__text">327  Recipes</p>
-                    <h3 class="gallery__title">ITALIAN</h3>
+            <form class="modal-form">
+                <div class="modal-form__thumb">
+                    <p class="modal__text">SIGN-UP</p>
                 </div>
-            </div>
-        </li>
-        <li class="gallery__item ">
-            <div class="gallery__wrapper">
-                <img  src="./images/recipes/indian.jpg" width = "320" height = "225" alt = "seafood">    
-                <div class="gallery__actions">
-                    <p class="gallery__text">856 Recipes</p>
-                    <h3 class="gallery__title">INDIAN</h3>
+                <div class="modal-form__field">
+                    <label>
+                        <input class="modal-form__input" type="text" name="user-name" placeholder="Username">
+                    </label>
                 </div>
-            </div>
-        </li>
-        <li class="gallery__item ">
-            <div class="gallery__wrapper">
-                <img  src="./images/recipes/french.jpg" width = "320" height = "225" alt = "seafood">    
-                <div class="gallery__actions">
-                    <p class="gallery__text">27 Recipes</p>
-                    <h3 class="gallery__title">FRENCH</h3>
+                <div class="modal-form__field">
+                    <label>
+                        <input class="modal-form__input" type="tel" placeholder="Email">
+                    </label>
                 </div>
-            </div>
-        </li>
-        <li class="gallery__item ">
-            <div class="gallery__wrapper">
-                <img src="./images/recipes/steakhouse.jpg" width = "320" height = "225" alt = "seafood"> 
-            <div class="gallery__actions">
-                <p class="gallery__text">174  Recipes</p>
-                <h3 class="gallery__title">STEAKHOUSE</h3>
-            </div>
-        </div>
-        </li >
-        <li class="gallery__item ">
-            <div class="gallery__wrapper">
-            <img src="./images/recipes/seafood.jpg" alt="">
-            <div class="gallery__actions">
-                <p class="gallery__text">731 Recipes</p>
-                <h3 class="gallery__title">SEAFOOD</h3>
-            </div>
-        </div>
-        </li>
-        <li class="gallery__item ">
-            <div class="gallery__wrapper">
-            <img  src="./images/recipes/sushi.jpg" width = "320" height = "225" alt = "sushi">
-            <div class="gallery__actions">
-                <p class="gallery__text">237 Recipes</p>
-                <h3 class="gallery__title">SUSHI</h3>
-            </div>
-        </div>
-        </li>
-        <li class="gallery__item ">
-            <div class="gallery__wrapper">
-            <img  src="./images/recipes/mexican.jpg" width = "320" height = "225" alt = "mexican">
-            <div class="gallery__actions">
-                <p class="gallery__text">529 Recipes</p>
-                <h3 class="gallery__title">MEXICAN</h3>
-            </div>
-        </div>
-        </li>
-        <li class="gallery__item ">
-            <div class="gallery__wrapper">
-            <img  src="./images/recipes/chinese.jpg" width = "320" height = "225" alt = "chinese">
-            <div class="gallery__actions">
-                <p class="gallery__text">145 Recipes</p>
-                <h3 class="gallery__title">CHINESE</h3>
-            </div>
-        </div>
-        </li>
-        <li class="gallery__item ">
-            <div class="gallery__wrapper">
-            <img  src="./images/recipes/pizza.jpg" width = "320" height = "225" alt = "pizza">
-            <div class="gallery__actions">
-                <p class="gallery__text">327 Recipes</p>
-                <h3 class="gallery__title">PIZZA</h3>
-            </div>
-        </div>
-        </li>
-        <li class="gallery__item">
-            <div class="gallery__wrapper">
-            <img  src="./images/recipes/american.jpg" width = "320" height = "225" alt = "american">
-            <div class="gallery__actions">
-                <p class="gallery__text">1.437 Recipes</p>
-                <h3 class="gallery__title">AMERICAN</h3>
-            </div>
-        </div>
-        </li>
-    </ul>
-</div>
-</section>
-<section class = "statistics">
-    <div class="container">
-    <h2 class="secondary-title visually-hidden">statistics</h2>
-    <ul class="statistics__list list">
-        <li class="statistics__item" >
-            <span class="statistics__label">23,567</span>
-            <p class="statistics__text">Recipes Available</p>
-        </li>
-        <li class="statistics__item" >
-            <span class="statistics__label">431,729</span>
-            <p class="statistics__text">Active Users</p>
-        </li>
-        <li class="statistics__item" >
-            <span class="statistics__label">892,173</span>
-            <p class="statistics__text">Positive Reviews </p>
-        </li>
-        <li class="statistics__item" >
-            <span class="statistics__label">56,581</span>
-            <p class="statistics__text">Photos & Videos</p>
-        </li>
-        <li class="statistics__item" >
-            <span class="statistics__label">3,182</span>
-            <p class="statistics__text">Spices and Herbs </p>
-        </li>
-    </ul>
-</div>
-</section>
-</main>
-<footer class="footer">
-    <div class="footer-container container">
-   <p class="copyright">&copy; 2014 Fudi. All Rights Reserved.</p>
-    <a class="link footer__link" href="./">DESIGN BY:<span class="footer__link--accent">WWW.BEKADES.COM</span></a>
-</div>
-</footer>
-<div data-modal class="backdrop is-hidden data-backdrop">
-    <div class="modal">
-        <button data-modal-close class="modal-button"  aria-label="Close" onclick="myDialog.close()">
-           <svg class="modal__icon" width="18" height="18">
-               <use href="./images/icons1.svg#icon-circle-left"></use>
-           </svg>
-       </button>
+                <div class="modal-form__field">
+                    <label>
+                        <input class="modal-form__input" type="text" name="mail" placeholder="password">
+                    </label>
+                </div>
 
-       <form class="modal-form">
-           <div class="modal-form__thumb">
-            <p class="modal__text">SIGN-UP</p>
-          </div>
-            <div class="modal-form__field">
-               <label>
-                   <input class="modal-form__input" type="text" name="user-name" placeholder="Username">
-               </label>
-            </div>
-            <div class="modal-form__field">
-               <label>
-                    <input class="modal-form__input" type="tel" placeholder="Email">
-               </label>
-            </div>
-            <div class="modal-form__field">
-               <label>
-                   <input class="modal-form__input" type="text" name="mail" placeholder="password">
-               </label>
-            </div>
-           
-            <div class="modal-form__field">
-               <label class="checkbox">
-                   <input class="checkbox__input visually-hidden" type="checkbox" name="agreement">
-                   <span class="checkbox__text">IF YOU ALREADY HAVE AN ACCOUNT</span>
-                   <a class="modal__link" href="./" target="_blank" rel="noopener norefferrer">LOG IN</a>
-               </label>
-           </div>
-           
-           <button class="secondary-button modal-filter" type="submit">
-                SIGN UP
-           </button>
-       </form>
+                <div class="modal-form__field">
+                    <label class="checkbox">
+                        <input class="checkbox__input visually-hidden" type="checkbox" name="agreement">
+                        <span class="checkbox__text">IF YOU ALREADY HAVE AN ACCOUNT</span>
+                        <a class="modal__link" href="./" target="_blank" rel="noopener norefferrer">LOG IN</a>
+                    </label>
+                </div>
+
+                <button class="secondary-button modal-filter" type="submit">
+                    SIGN UP
+                </button>
+            </form>
+        </div>
     </div>
-</div> 
-<div data-modal1 class="backdrop is-hidden data-backdrop">
-    <div class="modal">
-        <button data-modal1-close class="modal-button"  aria-label="Close" onclick="myDialog.close()">
-           <svg class="modal__icon" width="18" height="18">
-               <use href="./images/icons1.svg#icon-circle-left"></use>
-           </svg>
-       </button>
+    <script src="./js/mobile-menu.js"></script>
+    <script src="./js/modal.js"></script>
+    <script src="./js/modal1.js"></script>
 
-       <form class="modal-form">
-           <div class="modal-form__thumb">
-            <p class="modal__text">SIGN-UP</p>
-          </div>
-            <div class="modal-form__field">
-               <label>
-                   <input class="modal-form__input" type="text" name="user-name" placeholder="Username">
-               </label>
-            </div>
-            <div class="modal-form__field">
-               <label>
-                    <input class="modal-form__input" type="tel" placeholder="Email">
-               </label>
-            </div>
-            <div class="modal-form__field">
-               <label>
-                   <input class="modal-form__input" type="text" name="mail" placeholder="password">
-               </label>
-            </div>
-           
-            <div class="modal-form__field">
-               <label class="checkbox">
-                   <input class="checkbox__input visually-hidden" type="checkbox" name="agreement">
-                   <span class="checkbox__text">IF YOU ALREADY HAVE AN ACCOUNT</span>
-                   <a class="modal__link" href="./" target="_blank" rel="noopener norefferrer">LOG IN</a>
-               </label>
-           </div>
-           
-           <button class="secondary-button modal-filter" type="submit">
-                SIGN UP
-           </button>
-       </form>
-    </div>
-</div> 
-<script src="./js/mobile-menu.js"></script>
-<script src="./js/modal.js"></script>
-<script src="./js/modal1.js"></script>
-
-<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="slick/slick.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function(){
-    $('.carousel').slick({
-        infinite: true,
-        dots: true,
-        slidesToShow: 1,
-        slidesToScroll: 1
-    });
-  });
-</script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.carousel').slick({
+                infinite: true,
+                dots: true,
+                slidesToShow: 1,
+                slidesToScroll: 1
+            });
+        });
+    </script>
 </body>
+
 </html>
