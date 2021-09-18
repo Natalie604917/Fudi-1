@@ -1,63 +1,63 @@
-.introduction{
+.introduction {
   background-color: var(--bg-color);
   overflow: hidden;
 }
 
-.introduction__container{
-    display: flex;
-    justify-content: space-between;
-    position: relative;
+.introduction__container {
+  display: flex;
+  justify-content: space-between;
+  position: relative;
 }
-.introduction__action{
+.introduction__action {
   display: flex;
   position: absolute;
   width: 100%;
-  @media screen and (max-width: 767.98px) {
-    top: 120px;
-    right: 200px;
+  @media screen and (min-width: 320px) and (max-width: 767.98px) {
+    top: 100px;
+    right: 140px;
   }
   @media screen and (min-width: 768px) {
-  top: 255px;
-  right: -70px;
+    top: 255px;
+    right: -70px;
   }
   @media screen and (max-width: 767.98px) {
     width: 45%;
   }
 }
-.introduction__title{
-padding-top: 182px;
-margin-bottom: 30px;
-@media screen and (max-width: 767.98px) {
-  padding-top: 30px;
-  margin-bottom: 15px;
-  font-size: 14px;
-}
+.introduction__title {
+  padding-top: 182px;
+  margin-bottom: 30px;
+  @media screen and (max-width: 767.98px) {
+    padding-top: 30px;
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
 }
 
-.introduction__content{
+.introduction__content {
   max-width: 543px;
   height: 300px;
   padding: 0 20px;
   @media screen and (max-width: 767.98px) {
     padding: 0 10px;
+  }
 }
+.introduction__text {
+  margin-bottom: 29px;
+  @media screen and (max-width: 767.98px) {
+    font-size: 10px;
+    margin-bottom: 10px;
+  }
 }
-.introduction__text{
-margin-bottom: 29px;
-@media screen and (max-width: 767.98px) {
-  font-size: 10px;
-  margin-bottom: 10px;
+.introduction__item:not(:last-child) {
+  margin-right: 10px;
 }
-}
-.introduction__item:not(:last-child){
-margin-right: 10px;
-}
-.introduction__image{
-margin-top: 102px;
-height: 779px;
-@media screen and (max-width: 767.98px) {
-  margin-top: 50px;
-  width: 60%;
-  height: 60%;
-}
+.introduction__image {
+  margin-top: 102px;
+  height: 779px;
+  @media screen and (max-width: 767.98px) {
+    margin-top: 50px;
+    width: 60%;
+    height: 60%;
+  }
 }
