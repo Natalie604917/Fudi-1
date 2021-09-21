@@ -2,12 +2,11 @@
   display: inline-flex;
   margin-top: 0;
   margin-bottom: 0;
+
   @media screen and (max-width: 449.99px) {
     display: none;
   }
   @media screen and (min-width: 450px) {
-    flex-direction: column;
-  }
 }
 
 .menu__item:not(:last-child) {
@@ -34,15 +33,18 @@
     padding-bottom: 32px;
   }
 }
+
 .menu__link {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 0.84;
+
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
   position: relative;
   display: block;
   color: var(--secondary-text-color);
 
-  &:hover,
-  &:focus {
-    color: var(--accent);
-  }
   @media screen and (max-width: 767px) {
     font-size: 40px;
     line-height: 1.18;
@@ -53,7 +55,4 @@
     padding-top: 32px;
     padding-bottom: 32px;
   }
-}
-.menu-filters__link:hover {
-  color: var(--accent);
 }
