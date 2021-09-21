@@ -1,3 +1,10 @@
+hr {
+  width: 88px;
+  border: none;
+  color: red;
+  background-color: red;
+  height: 1px;
+}
 .feature-section {
   @media screen and (max-width: 767.98px) {
     padding-bottom: 60px;
@@ -45,15 +52,15 @@
   }
 }
 
-.feature__title {
-  color: var(--title-text);
-  padding-bottom: 10px;
-  border-bottom: 1px solid red;
+// .feature__title {
+//   color: var(--title-text);
+//   padding-bottom: 10px;
+//   border-bottom: 1px solid red;
 
-  @media screen and (max-width: 768px) {
-    text-align: center;
-  }
-}
+//   @media screen and (max-width: 768px) {
+//     text-align: center;
+//   }
+// }
 
 .feature__text {
   font-size: 14px;

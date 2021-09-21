@@ -1,17 +1,13 @@
 .carousel {
-  width: 150px;
-  height: 150px;
+  min-width: 250px;
 }
 
 .reviews {
-  padding-top: 84px;
-  padding-bottom: 81px;
+  min-width: 1600px;
+  min-height: 462px;
   background-image: url(/images/rewiews/Layer_17.png);
   background-repeat: no-repeat;
   background-size: cover;
-  @media screen and (max-width: 767.98px) {
-    padding: 60px 0;
-  }
 }
 
 .reviews__icon {
