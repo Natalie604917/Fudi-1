@@ -13,12 +13,9 @@
     <link rel="stylesheet" href="./css/fonts.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@0.2.0/modern-normalize.min.css">
     <link rel="stylesheet" href="./css/main.css">
-
     <link rel="stylesheet" type="text/css" href="slick/slick.css" />
-
     <link rel="stylesheet" type="text/css" href="slick/slick-theme.css" />
 </head>
-
 <body>
     <header class="page-header">
         <div class="container page-header__container">
@@ -28,10 +25,10 @@
                 </a>
                 <ul class="list menu-filters">
                     <li class="menu-filters__item">
-                        <a href="#openModal-1" class="link menu-filters" data-modal-open>LOG IN</a>
+                        <a href="./" class="link menu-filters__link">LOG IN</a>
                     </li>
                     <li class="menu-filters__item">
-                        <a href="#openModal-2" class="link menu-filters" data-modal1-open>SIGN UP</a>
+                        <a href="./"  class="link menu-filters__link">SIGN UP</a>
                     </li>
                 </ul>
                 <button type="button" class="menu-btn" data-menu-button>
@@ -41,7 +38,6 @@
                     </svg>
                 </button>
             </nav>
-
             <div class="menu-container" data-menu>
                 <ul class="list menu">
                     <li class="menu__item">
@@ -68,7 +64,6 @@
             </div>
         </div>
     </header>
-
     <main>
         <section class="hero dark-bg">
             <div class="hero__container">
@@ -82,7 +77,6 @@
                 </div>
             </div>
         </section>
-
         <section class="feature-section">
             <div class="container">
                 <!-- заголовок, который  будет скрыт с помощью CSS -->
@@ -92,7 +86,6 @@
                     <li class="grid__item feature__item">
                         <div class="feature__wrapper">
                             <img src="./images/feature /icon_1.png" alt="INSPIRED">
-
                         </div>
                         <div class="feature__content">
                             <h3 class="feature__title secondary-title">GET INSPIRED</h3>
@@ -103,11 +96,9 @@
                             </p>
                         </div>
                     </li>
-
                     <li class="grid__item feature__item">
                         <div class="feature__wrapper">
                             <img src="./images/feature /icon_2.png" alt="REWARDED">
-
                         </div>
                         <div class="feature__content">
                             <h3 class="feature__title secondary-title">GET REWARDED</h3>
@@ -156,7 +147,6 @@
                         Suspendisse aliquet felis consectetur libero congue, sed pulvinar diam
                         malesuada. Duis vehicula a nibh id hendrerit. Donec sit amet ultrices
                         ante, a mattis massa. </p>
-
                     <ul class="list introduction__list">
                         <li class="introduction__item"><img src="./images/introducing/appstore.png" width="112"
                                 height="39" alt="appstore"></li>
@@ -194,10 +184,8 @@
                         <span>- Ivan Ivanov, Kiev -</span>
                     </div>
                 </div>
-
         </section>
         <section class="gallery">
-
             <div class="container gallery__container">
                 <h2 class="secondary-title">BROWSE BY CUISINES</h2>
                 <ul class="gallery__list list">
@@ -329,62 +317,87 @@
                     class="footer__link--accent">WWW.BEKADES.COM</span></a>
         </div>
     </footer>
-    <div id="openModal-1" class="modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">Модальное окно 1</h3>
-              <a href="#close" title="Close" class="close">×</a>
-            </div>
-            <div class="modal-body">
-              Это - первое модальное окно. Добро пожаловать!
-            </div>
-          </div>
+    <div data-modal class="backdrop is-hidden data-backdrop">
+        <div class="modal">
+            <button data-modal-close class="modal-button" aria-label="Close">
+                <svg class="modal__icon" width="18" height="18">
+                    <use href="./images/icons1.svg#icon-circle-left"></use>
+                </svg>
+            </button>
+            <form class="modal-form">
+                <div class="modal-form__thumb">
+                    <p class="modal__text">LOG-IN</p>
+                </div>
+                <div class="modal-form__field">
+                    <label>
+                        <input class="modal-form__input" type="text" name="user-name" placeholder="Username">
+                    </label>
+                </div>
+                <div class="modal-form__field">
+                    <label>
+                        <input class="modal-form__input" type="tel" placeholder="Email">
+                    </label>
+                </div>
+                <div class="modal-form__field">
+                    <label>
+                        <input class="modal-form__input" type="text" name="mail" placeholder="password">
+                    </label>
+                </div>
+                <div class="modal-form__field">
+                    <label class="checkbox">
+                        <input class="checkbox__input visually-hidden" type="checkbox" name="agreement">
+                        <span class="checkbox__text">IF YOU ALREADY HAVE AN ACCOUNT</span>
+                        <a class="modal__link" href="./" target="_blank" rel="noopener norefferrer">LOG IN</a>
+                    </label>
+                </div>
+                <button class="secondary-button modal-filter" type="submit">
+                    SIGN UP
+                </button>
+            </form>
         </div>
-      </div>
-  <!-- второе окно -->
-      <div id="openModal-2" class="modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">Модальное окно 2</h3>
-              <a href="#close" title="Close" class="close">×</a>
+        <a class="close" title="Закрыть" href="#close"></a>
+        <div data-modal1 class="backdrop is-hidden data-backdrop">
+            <div class="modal">
+                <button data-modal1-close class="modal-button" aria-label="Close">
+                    <svg class="modal__icon" width="18" height="18">
+                        <use href="./images/icons1.svg#icon-circle-left"></use>
+                    </svg>
+                </button>
+                <form class="modal-form">
+                    <div class="modal-form__thumb">
+                        <p class="modal__text">SIGN-UP</p>
+                    </div>
+                    <div class="modal-form__field">
+                        <label>
+                            <input class="modal-form__input" type="text" name="user-name" placeholder="Username">
+                        </label>
+                    </div>
+                    <div class="modal-form__field">
+                        <label>
+                            <input class="modal-form__input" type="tel" placeholder="Email">
+                        </label>
+                    </div>
+                    <div class="modal-form__field">
+                        <label>
+                            <input class="modal-form__input" type="text" name="mail" placeholder="password">
+                        </label>
+                    </div>
+                    <div class="modal-form__field">
+                        <label class="checkbox">
+                            <input class="checkbox__input visually-hidden" type="checkbox" name="agreement">
+                            <span class="checkbox__text">IF YOU ALREADY HAVE AN ACCOUNT</span>
+                            <a class="modal__link" href="./" target="_blank" rel="noopener norefferrer">LOG IN</a>
+                        </label>
+                    </div>
+                    <button class="secondary-button modal-filter" type="submit">
+                        SIGN UP
+                    </button>
+                </form>
             </div>
-            <div class="modal-body">
-              Это - второе модальное окно. Добро пожаловать!
-            </div>
-          </div>
-        </div>
-      </div>
-  <!-- третье окно -->
-      <div id="openModal-3" class="modal">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h3 class="modal-title">Модальное окно 3</h3>
-              <a href="#close" title="Close" class="close">×</a>
-            </div>
-            <div class="modal-body">
-              Это - третье модальное окно. Добро пожаловать!
-            </div>
-          </div>
-        </div>
-      </div>
-
-<script>
-    document.addEventListener("DOMContentLoaded", function () {
-      var scrollbar = document.body.clientWidth - window.innerWidth + 'px';
-      console.log(scrollbar);
-      document.querySelector('[href="#openModal"]').addEventListener('click', function () {
-        document.body.style.overflow = 'hidden';
-        document.querySelector('#openModal').style.marginLeft = scrollbar;
-      });
-      document.querySelector('[href="#close"]').addEventListener('click', function () {
-        document.body.style.overflow = 'visible';
-        document.querySelector('#openModal').style.marginLeft = '0px';
-      });
-    });
-  </script>
+            <script src="./js/mobile-menu.js"></script>
+            <script src="./js/modal.js"></script>
+            <script src="./js/modal1.js"></script>
+ 
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script type="text/javascript" src="slick/slick.min.js"></script>
