@@ -64,8 +64,6 @@ img {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
   transition-property: color;
   transition-duration: 250ms;
@@ -74,10 +72,6 @@ img {
   &:hover,
   &:focus {
     color: var(--accent);
-
-    // @media screen and (max-width: 1199px) {
-    //   padding: 0;
-    // }
   }
 }
 
