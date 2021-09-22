@@ -56,8 +56,10 @@
   line-height: 2.14;
   text-transform: uppercase;
   letter-spacing: 0.7px;
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
 }
-
 .navigation__item {
   @media screen and (max-width: 767px) {
     margin-bottom: 35px;

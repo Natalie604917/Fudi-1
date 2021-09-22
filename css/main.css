@@ -288,6 +288,13 @@ html {
   outline: 2px solid red;
 }
 
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
 ul {
   margin: 0;
 }
@@ -797,6 +804,12 @@ label {
 }
 
 @media screen and (max-width: 767px) {
+  .navigation__link {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 767px) {
   .navigation__item {
     margin-bottom: 35px;
   }
@@ -860,7 +873,7 @@ label {
 
 .hero__title {
   font-size: 100px;
-  line-height: 0.3;
+  line-height: 0.76;
   letter-spacing: 5px;
   font-weight: 700;
   text-transform: uppercase;
@@ -1108,32 +1121,26 @@ hr {
 .introduction__container {
   display: flex;
   justify-content: space-between;
+}
+
+.introduction__thumb {
+  display: flex;
   position: relative;
 }
 
 .introduction__action {
   display: flex;
   position: absolute;
-  width: 100%;
+  width: 80%;
+  height: 80%;
+  top: 29%;
+  left: 13%;
 }
 
 @media screen and (min-width: 320px) and (max-width: 767.98px) {
   .introduction__action {
-    top: 100px;
-    right: 140px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .introduction__action {
-    top: 255px;
-    right: -70px;
-  }
-}
-
-@media screen and (max-width: 767.98px) {
-  .introduction__action {
-    width: 45%;
+    top: 100%;
+    left: 10%;
   }
 }
 
@@ -1153,7 +1160,6 @@ hr {
 .introduction__content {
   max-width: 543px;
   height: 300px;
-  padding: 0 20px;
 }
 
 @media screen and (max-width: 767.98px) {
