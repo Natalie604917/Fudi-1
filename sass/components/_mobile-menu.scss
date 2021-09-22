@@ -21,10 +21,11 @@
   position: relative;
   z-index: 120;
   display: inline-flex;
+  align-items: center;
   border: none;
   background-color: transparent;
   width: 40px;
-  height: 40px;
+  height: 30px;
   fill: var(--secondary-text-color);
 
   & .icon-cross {

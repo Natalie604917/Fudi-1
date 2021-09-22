@@ -288,13 +288,6 @@ html {
   outline: 2px solid red;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
 ul {
   margin: 0;
 }
@@ -439,10 +432,11 @@ img {
   position: relative;
   z-index: 120;
   display: inline-flex;
+  align-items: center;
   border: none;
   background-color: transparent;
   width: 40px;
-  height: 40px;
+  height: 30px;
   fill: var(--secondary-text-color);
 }
 
@@ -688,18 +682,6 @@ label {
   flex-direction: column;
 }
 
-@media screen and (max-width: 767px) {
-  .menu__item:not(:last-child) {
-    margin-bottom: 35px;
-  }
-}
-
-@media screen and (min-width: 768px) {
-  .menu__item:not(:last-child) {
-    margin-right: 50px;
-  }
-}
-
 .menu__link--active {
   position: relative;
   display: block;
@@ -722,22 +704,16 @@ label {
 }
 
 .menu__link {
+  font-size: 40px;
+  line-height: 1.18;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 0.84;
   text-transform: uppercase;
   letter-spacing: 0.7px;
   position: relative;
   display: block;
   color: var(--secondary-text-color);
-}
-
-@media screen and (max-width: 767px) {
-  .menu__link {
-    font-size: 40px;
-    line-height: 1.18;
-    padding: 0;
-  }
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -812,6 +788,26 @@ label {
   }
 }
 
+.navigation__link {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 2.14;
+  text-transform: uppercase;
+  letter-spacing: 0.7px;
+}
+
+@media screen and (max-width: 767px) {
+  .navigation__item {
+    margin-bottom: 35px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .navigation__item {
+    margin-right: 41px;
+  }
+}
+
 .hero {
   min-height: 100vh;
   padding-top: 237px;
@@ -836,9 +832,7 @@ label {
 }
 
 .hero__container {
-  display: flex;
   text-align: center;
-  align-items: center;
 }
 
 .hero__content {
@@ -848,13 +842,7 @@ label {
 
 @media screen and (min-width: 480px) {
   .hero__content {
-    max-width: 415px;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .hero__content {
-    max-width: 415px;
+    min-width: 415px;
   }
 }
 
@@ -865,14 +853,14 @@ label {
   font-family: 'times_new_roman_psbold_italic', sans-serif;
   font-size: 36px;
   font-weight: 400;
-  line-height: 1.2;
+  line-height: 0.83;
   letter-spacing: 1.8px;
   margin-bottom: 19px;
 }
 
 .hero__title {
   font-size: 100px;
-  line-height: 0.75;
+  line-height: 0.3;
   letter-spacing: 5px;
   font-weight: 700;
   text-transform: uppercase;
@@ -900,8 +888,8 @@ label {
   text-align: center;
   text-transform: uppercase;
   letter-spacing: 0.7px;
-  padding-top: 25px;
-  padding-bottom: 30px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   padding-left: 82px;
   padding-right: 80px;
   margin-bottom: 41px;

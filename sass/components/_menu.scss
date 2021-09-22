@@ -5,15 +5,6 @@
   flex-direction: column;
 }
 
-.menu__item:not(:last-child) {
-  @media screen and (max-width: 767px) {
-    margin-bottom: 35px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-right: 50px;
-  }
-}
-
 .menu__link--active {
   position: relative;
   display: block;
@@ -31,21 +22,16 @@
 }
 
 .menu__link {
+  font-size: 40px;
+  line-height: 1.18;
   font-weight: 700;
-  font-size: 18px;
-  line-height: 0.84;
-
   text-transform: uppercase;
   letter-spacing: 0.7px;
   position: relative;
   display: block;
   color: var(--secondary-text-color);
-
-  @media screen and (max-width: 767px) {
-    font-size: 40px;
-    line-height: 1.18;
-    padding: 0;
-  }
+  padding-top: 20px;
+  padding-bottom: 20px;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 32px;
