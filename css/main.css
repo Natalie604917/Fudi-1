@@ -416,6 +416,25 @@ img {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 320px) {
+  .menu-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 105;
+    background-color: var(--form-color);
+    background-image: linear-gradient(to bottom, #321a3e, #482e45, #8a6b5a);
+    padding: 48px 40px;
+  }
+}
+
+.menu-container.is-open {
+  display: block;
+}
+
 .menu-btn {
   position: relative;
   z-index: 120;
@@ -445,25 +464,6 @@ img {
   transition-property: fill;
   transition-duration: 250ms;
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-@media screen and (min-width: 320px) {
-  .menu-container {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    z-index: 105;
-    background-color: var(--form-color);
-    background-image: linear-gradient(to bottom, #321a3e, #482e45, #8a6b5a);
-    padding: 48px 40px;
-  }
-}
-
-.menu-container.is-open {
-  display: block;
 }
 
 .backdrop {
@@ -685,7 +685,6 @@ label {
   display: inline-flex;
   margin-top: 0;
   margin-bottom: 0;
-  display: none;
   flex-direction: column;
 }
 
@@ -906,6 +905,9 @@ label {
   padding-left: 82px;
   padding-right: 80px;
   margin-bottom: 41px;
+  transition-property: color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .hero__button:hover {
